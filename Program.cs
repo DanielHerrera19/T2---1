@@ -24,7 +24,7 @@ namespace T2___1
                         Pantallas.MenuPrincipal();
                         break;
                 }
-            } while (opcion !4);
+            } while (opcion !=4);
         }        
     }
 }
