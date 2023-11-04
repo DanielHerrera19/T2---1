@@ -11,20 +11,31 @@ namespace T2___1
     {
         static void Main(string[] args)
         {
-            int opcion = Pantallas.MenuPrincipal();
+             int opcion = Pantallas.MenuPrincipal();
 
-            do
+             do
             {
-                switch (opcion)
-                {
-                    case 1:
-                        Pantallas.IngresarNota();
-                        break;
-                    case 0:
-                        Pantallas.MenuPrincipal();
-                        break;
-                }
-            } while (opcion !=4);
+                 Console.Clear();
+                 switch (opcion)
+                 {
+                     case 1:
+                         opcion = Pantallas.IngresarNota();
+                         break;
+                     case 2:
+                         opcion= Pantallas.NotamasAlta();
+                         break;
+                     case 3:
+                         opcion = Pantallas.NotamasBaja();
+                         break;
+                     case 4:
+                         opcion = Pantallas.ListaEstudiantes();
+                         break;
+                     case 0:
+                     default:
+                         opcion = Pantallas.MenuPrincipal();
+                         break;
+                 }
+            } while (opcion !=5);
         }        
     }
 }
