@@ -8,12 +8,11 @@ namespace T2___1
 {
     public class Operaciones
     {
-        public static int getEntero(string prefijo, string reemplazo)
+       public static int getEntero(string prefijo, string reemplazo)
         {
-
             int respuesta = 0;
             bool correcto = false;
-
+        
             do
             {
                 string numeroTexto = getTextoPantalla(prefijo);
@@ -24,11 +23,9 @@ namespace T2___1
                     Console.WriteLine(reemplazo);
                     Console.WriteLine("Ingresa un número válido");
                 }
-
             } while (!correcto);
-
+           
             return respuesta;
-
         }
 
         public static float getDecimal(string prefijo)
